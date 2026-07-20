@@ -257,6 +257,13 @@
             scroll-snap-align: start; 
             padding: var(--spacing-lg) 0;
         }
+
+        .logo-container{
+            align-items: center;
+            justify-content: center;
+            display: flex;
+        }
+
         .hero-content { transition: opacity 0.6s cubic-bezier(.4,0,.2,1), transform 0.6s cubic-bezier(.4,0,.2,1); will-change: opacity, transform; }
         .hero-logo { font-size: var(--fs-hero); font-weight: 700; letter-spacing: 0.08em; line-height: 1; color: var(--black); margin-bottom: var(--spacing-sm); }
         .hero-sub { font-size: var(--fs-h3); font-weight: 400; opacity: 0.55; margin-bottom: var(--spacing-md); letter-spacing: 0.01em; line-height: 1.5; color: var(--black); }
@@ -382,7 +389,10 @@
 
     <nav class="navbar" id="navbar" role="navigation" aria-label="Navegação principal">
         <div class="container">
-            <a href="#hero" class="nav-logo">SPACE</a>
+            <div class="logo-container">
+                <img src="images/spacelogo.png" width="50px" alt="spacelogo">
+                <a href="#hero" class="nav-logo">SPACE</a>
+            </div>
             <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
                 <span></span><span></span><span></span>
             </button>
